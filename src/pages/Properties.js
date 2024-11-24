@@ -30,12 +30,9 @@ function Properties() {
 
   return (
     // Start properties
-    <div className="properties">
+    <div className="properties" id="Marketplace">
       <Container>
-        <AnimationTitles
-          className="title mx-auto"
-          title="Discover more properties"
-        />
+        <AnimationTitles className="title mx-auto" title="Discover more properties" />
         {/* Start tabs */}
         <div className="tabs d-flex justify-content-start justify-content-sm-center align-items-center flex-nowrap w-lg-50">
           <Swiper
@@ -50,18 +47,14 @@ function Properties() {
               768: {
                 slidesPerView: 6,
               },
-            }}
-          >
+            }}>
             <SwiperSlide>
               <Button className="ms-0 bg-black-100 border-0" onClick={active}>
                 All
               </Button>
             </SwiperSlide>
             <SwiperSlide>
-              <Button
-                className="ms-0 bg-black-100 border-0 active"
-                onClick={active}
-              >
+              <Button className="ms-0 bg-black-100 border-0 active" onClick={active}>
                 Cottage
               </Button>
             </SwiperSlide>
@@ -97,8 +90,7 @@ function Properties() {
         <motion.div
           initial={{ x: -80 }}
           whileInView={{ x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
           <Swiper
             slidesPerView={4}
             spaceBetween={15}
@@ -127,8 +119,7 @@ function Properties() {
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
-            className="mySwiper mt-4"
-          >
+            className="mySwiper mt-4">
             <SwiperSlide>
               {" "}
               <Card className="bg-black-100 rounded">
@@ -141,9 +132,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">
-                    Cottage «Forrest 1»
-                  </h5>
+                  <h5 className="mt-2 text-white fw-normal">Cottage «Forrest 1»</h5>
                   <p className="gray-90">@Red Oak Realty</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -168,10 +157,7 @@ function Properties() {
                       alt="img"
                       src={require("../images/properties/pexels-stan-krotov-12737424 1.webp")}
                     />
-                    <i
-                      className="fa-solid fa-heart like text-danger"
-                      onClick={like}
-                    ></i>
+                    <i className="fa-solid fa-heart like text-danger" onClick={like}></i>
                   </div>
                   <h5 className="mt-2 text-white fw-normal">Freshness</h5>
                   <p className="gray-90">@ERA Ukraine Real Estate</p>
@@ -308,9 +294,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">
-                    Cottage «Forrest 1»
-                  </h5>
+                  <h5 className="mt-2 text-white fw-normal">Cottage «Forrest 1»</h5>
                   <p className="gray-90">@Red Oak Realty</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -335,10 +319,7 @@ function Properties() {
                       alt="img"
                       src={require("../images/properties/pexels-stan-krotov-12737424 1.webp")}
                     />
-                    <i
-                      className="fa-solid fa-heart like text-danger"
-                      onClick={like}
-                    ></i>
+                    <i className="fa-solid fa-heart like text-danger" onClick={like}></i>
                   </div>
                   <h5 className="mt-2 text-white fw-normal">Freshness</h5>
                   <p className="gray-90">@ERA Ukraine Real Estate</p>

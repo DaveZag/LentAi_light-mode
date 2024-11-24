@@ -1,0 +1,23 @@
+:root {
+  --gray-150: #3d4467;
+  --background-color: #121420;
+  --primary-color: white;
+  --secondary-color: #c3c5ce;
+  --tertiary-color: #5e6379;
+  --fourth-color: #545b79;
+  --temp-background: none;
+  --swiper: rgb(18 20 32 / 75%);
+  --card-shadow: #00000059;
+}
+
+[data-theme="light"] {
+  --background-color: #b4e3e9;
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: #1b1f33;
+  --tertiary-color: #595959;
+  --fourth-color: #545b79;
+  --temp-background: black;
+  --swiper: rgb(255 255 255 / 50%);
+  --swiper-background: white;
+  --card-shadow: #545b7940;
+}

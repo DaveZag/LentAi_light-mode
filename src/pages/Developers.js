@@ -4,21 +4,16 @@ import { motion } from "framer-motion";
 
 function Developers() {
   return (
-    <div className="developers">
+    <div className="developers" id="Developers">
       <div className="container-fluid">
-        <AnimationTitles
-          title="Our the best developers"
-          className="title mx-auto"
-        />
+        <AnimationTitles title="Our the best developers" className="title mx-auto" />
         <p className="gray-50 text-center mb-5">
-          The value of real estate can be affected by its utility, project, and
-          demand.{" "}
+          The value of real estate can be affected by its utility, project, and demand.{" "}
         </p>
         <motion.div
           initial={{ x: -80 }}
           whileInView={{ x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
           <Swiper
             className="mySwiper overflow-none justify-content-start"
             grabCursor={true}
@@ -36,8 +31,7 @@ function Developers() {
               1198: {
                 slidesPerView: 5,
               },
-            }}
-          >
+            }}>
             <SwiperSlide>
               <div className="d-flex justify-content-between align-items-center py-2 px-3">
                 <img
@@ -103,8 +97,7 @@ function Developers() {
         <motion.div
           initial={{ x: 80 }}
           whileInView={{ x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
           <Swiper
             className="mySwiper overflow-none"
             spaceBetween={50}
@@ -120,8 +113,7 @@ function Developers() {
               1298: {
                 slidesPerView: 5,
               },
-            }}
-          >
+            }}>
             <SwiperSlide>
               <div className="d-flex justify-content-between align-items-center py-2 px-3">
                 <img
@@ -149,9 +141,7 @@ function Developers() {
                   src={require("../images/developers/logo-09.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">
-                  Leading Real Estate Companies
-                </h6>
+                <h6 className="text-white m-0">Leading Real Estate Companies</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>

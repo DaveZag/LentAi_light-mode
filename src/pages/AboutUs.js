@@ -5,20 +5,20 @@ import AnimationTitles from "../components/functions/AnimationTitles";
 function AboutUs() {
   return (
     <div className="about">
-      <Container className="d-flex justify-content-between flex-wrap flex-md-nowrap">
+      <Container
+        className="d-flex justify-content-between flex-wrap flex-md-nowrap"
+        id="About">
         <motion.div
           initial={{ x: -200 }}
           whileInView={{ x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
           <AnimationTitles title="What is Renting-Platform?" className="title" />
           <p className="gray-50 mb-5">
-            As new technologies like cryptocurrency develop, the real estate
-            sector is changing drastically. It is important to understand both
-            how these technologies and the traditional real estate market work.
-            Governments are unable to comprehend the rapid advancement of
-            technology and modify their legal frameworks to accommodate it fast
-            enough.
+            As new technologies like cryptocurrency develop, the real estate sector is
+            changing drastically. It is important to understand both how these
+            technologies and the traditional real estate market work. Governments are
+            unable to comprehend the rapid advancement of technology and modify their
+            legal frameworks to accommodate it fast enough.
           </p>
           <Button variant="primary ms-0">Read More</Button>
         </motion.div>
@@ -26,8 +26,7 @@ function AboutUs() {
           initial={{ x: 200 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
-          className="d-flex flex-column"
-        >
+          className="d-flex flex-column">
           <div className="d-flex">
             <div>
               <img

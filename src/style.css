@@ -1,23 +1,29 @@
+@import "configurations.css";
+
+html {
+  scroll-padding-top: 80px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #121420;
+  box-sizing: border-box;
 }
 
-:root {
-  --gray-150: #3d4467;
+.app {
+  background-color: var(--background-color);
 }
 
 .gray-50 {
-  color: #c3c5ce;
+  color: var(--secondary-color);
 }
 
 .gray-90 {
-  color: #5e6379;
+  color: var(--tertiary-color);
 }
 
 .gray-100 {
-  color: #545b79;
+  color: var(--fourth-color);
 }
 
 .bg-black-100 {
@@ -29,7 +35,7 @@ body {
   max-width: 710px;
   margin: 0 0 30px;
   font-size: 48px;
-  color: white;
+  color: var(--primary-color);
 }
 
 .w-min-content {
@@ -61,25 +67,30 @@ body {
   object-fit: cover;
 }
 
+.partners .swiper-slide {
+  padding: 0.25rem 0;
+  background: var(--temp-background);
+}
+
 .swiper {
   margin-left: auto;
   margin-right: auto;
 }
 
 .swiper-pagination-bullet {
-  background-color: white;
+  background-color: var(--primary-color);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: white;
+  color: var(--primary-color);
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-size: 20px;
   padding: 10px 15px;
-  background-color: rgb(18 20 32 / 50%);
+  background-color: var(--swiper);
   border-radius: 50%;
 }
 
@@ -111,7 +122,7 @@ body {
 }
 
 .loading .container div h1 {
-  color: white;
+  color: var(--primary-color);
 }
 
 .loading .container .features {
@@ -147,7 +158,7 @@ body {
   position: absolute;
   top: 25px;
   right: -120px;
-  box-shadow: -3px -4px 11px 5px #00000059;
+  box-shadow: -3px -4px 11px 5px var(--card-shadow);
   transform: rotate(10deg);
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
@@ -184,17 +195,27 @@ body {
 }
 
 .properties .container .tabs button.active {
-  color: white;
+  color: var(--primary-color);
 }
 
 .like {
   position: absolute;
-  color: white;
-  background-color: rgb(18 20 32 / 75%);
+  color: var(--primary-color);
+  background-color: var(--swiper);
   padding: 10px;
   border-radius: 50%;
   top: 10px;
   right: 10px;
+}
+
+.card {
+  background-color: var(--swiper-background);
+  color: black !important;
+}
+
+.card h5.text-white,
+.card h6.text-white {
+  color: var(--primary-color) !important;
 }
 
 .card .card-body div img {
@@ -251,7 +272,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--primary-color);
   width: 100%;
   height: 150px;
   background-color: #0000004a;
@@ -294,7 +315,7 @@ body {
   left: 70%;
   transform: translateX(-50%);
   background-color: #356df6;
-  color: white;
+  color: var(--primary-color);
   font-size: 10px;
   letter-spacing: 0.3px;
   border-radius: 20px;
@@ -320,7 +341,7 @@ body {
   right: 70%;
   transform: translateX(50%);
   background-color: #356df6;
-  color: white;
+  color: var(--primary-color);
   font-size: 10px;
   letter-spacing: 0.3px;
   border-radius: 20px;
@@ -462,7 +483,7 @@ footer .container div ul h6 {
 }
 
 footer .container div ul li {
-  color: white;
+  color: var(--primary-color);
   list-style: none;
   font-weight: 100;
   cursor: pointer;

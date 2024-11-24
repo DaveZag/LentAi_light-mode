@@ -11,7 +11,7 @@ import Subscribe from "./pages/Subscribe";
 
 function App() {
   return (
-    <>
+    <div className="app" data-theme="light">
       <BrowserRouter>
         <NavBar />
         <Loading />
@@ -23,7 +23,7 @@ function App() {
         <Subscribe />
         <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
