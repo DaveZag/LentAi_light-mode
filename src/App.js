@@ -11,12 +11,16 @@ import Properties from "./pages/Properties";
 import Subscribe from "./pages/Subscribe";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState();
+
+  const handleToggleChange = () => {
+    setIsDark(!isDark);
+  };
 
   return (
     <div className="app" data-theme={isDark ? "light" : "dark"}>
       <BrowserRouter>
-        <NavBar />
+        <NavBar onToggleChange={handleToggleChange} isChecked={isDark} />
         <Loading />
         <Partners />
         <Properties />

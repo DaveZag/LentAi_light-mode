@@ -6,8 +6,9 @@ import logo from "../../images/logo/logo.png";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
+import { Toggle } from "../toggle/Toggle";
 
-function NavBar() {
+function NavBar({ onToggleChange, isChecked }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -36,6 +37,7 @@ function NavBar() {
             </Nav.Link>
             <Nav.Link href="#Developers">Developers</Nav.Link>
           </Nav>
+          <Toggle onToggleChange={onToggleChange} isChecked={isChecked} />
         </Navbar.Collapse>
         <div className="d-flex align-items-center order">
           <span className="line d-lg-inline-block d-none"></span>

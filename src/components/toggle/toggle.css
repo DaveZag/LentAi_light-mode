@@ -1,0 +1,44 @@
+.toggle-container {
+  display: inline-block;
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-toggle {
+  visibility: hidden;
+}
+
+.custom-toggle + label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5 rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.custom-toggle + label::before {
+  content: "";
+  height: 1rem;
+  width: 2rem;
+  border-radius: 1rem;
+  background-color: var(--toggle-background);
+  margin-right: 0.7rem;
+}
+
+.custom-toggle + label::after {
+  content: "";
+  position: absolute;
+  left: 0.07em;
+  height: 0.9rem;
+  width: 0.9rem;
+  border-radius: 1rem;
+  background-color: var(--toggle-ball);
+  transition: transform 270ms ease-in-out;
+}
+
+.custom-toggle:checked + label::after {
+  transform: translateX(108%);
+}

@@ -7,12 +7,14 @@
   --fourth-color: #545b79;
   --temp-background: none;
   --swiper: rgb(18 20 32 / 75%);
-  --swiper-background: rgb(18 20 32 / 50%);
+  --swiper-background: #1b1f33;
   --card-shadow: #00000059;
+  --toggle-background: white;
+  --toggle-ball: black;
 }
 
 [data-theme="light"] {
-  --background-color: #b4e3e9;
+  --background-color: #96ced6;
   --primary-color: rgb(0, 0, 0);
   --secondary-color: #1b1f33;
   --tertiary-color: #595959;
@@ -21,4 +23,6 @@
   --swiper: rgb(255 255 255 / 50%);
   --swiper-background: white;
   --card-shadow: #545b7940;
+  --toggle-background: black;
+  --toggle-ball: white;
 }
